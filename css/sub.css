@@ -1,6 +1,3 @@
-#sub{
-
-}
 #sub .bottomBlock{
   position: absolute;
   top: 0;
@@ -375,7 +372,7 @@ animation-name: slideUp;
   background-image: url("../img/work/my Desire.jpeg");
 }
 #sub .content_09 .inImg{
-  margin-left: 4.5vw;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
