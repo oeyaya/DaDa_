@@ -1,0 +1,473 @@
+.loader{
+    z-index: 110;
+    background: #F4F4F4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.lds-ellipsis {
+    z-index: 100;
+    display: inline-block;
+    position: fixed;
+    width: 80px;
+    top: 50%;
+    height: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #444;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.view{
+    width: 500px;
+    height: 30px;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.explan{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 105;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.text{
+    position: relative;
+    overflow: hidden;
+}
+.text:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px;
+    width: 100%;
+    border-left: 1px solid #fff;
+    background: #484848;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+.text.text1:after{
+    animation: typing1 1.5s steps(23);
+    animation-delay: 1.9s;
+    left: 100%;
+    height: 30px;
+    
+}
+.text.text2:after{
+    left: 68%;
+    animation: typing2 1.5s steps(12);
+/*    animation-delay: 3s;*/
+    height: 20px;
+}
+.text.text3:after{
+    left: 73%;
+    animation: typing3 1.5s steps(15);
+/*    animation-delay: 4s;*/
+    height: 20px;
+}
+
+
+@keyframes typing1{
+    0%{
+        left: 0;
+        opacity: 1;
+    }  
+    100%{
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes typing2{
+    0%{
+        left: 32%;
+         opacity: 1;
+    }  
+    100%{
+        left: 68%;
+         opacity: 1;
+    }
+}
+@keyframes typing3{
+    0%{
+        left: 28%;
+        opacity: 1;
+    }  
+    100%{
+        left: 73%;
+        opacity: 1;
+    }
+}
+.skip{
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75em;
+    color: #fff;
+}
+.skip:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: 0.8s;
+}
+.skip:hover.skip:after{
+     width: 0;
+}
+
+.mouse{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 4vw;
+    z-index: 106;
+}
+.mouse2{
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 64%;
+    transform: translateY(-50%);
+    width: 4vw;
+    z-index: 106;
+}
+.arrow{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 15.4vw;
+    z-index: 106;
+}
+.document2{
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 37%;
+    left: 57%;
+    z-index: 106;
+    color: #fff;
+    font-size: 0.85em;
+    line-height: 1.6em;
+}
+.planning{
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.planning .highlight{
+    font-size:1.2em;
+    margin-bottom: 10px;
+}
+.document{
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.6em;
+}
+.document:nth-child(2){
+    width: 300px;
+}
+.strong{
+    font-size: 1.4em;
+}
+.comma{
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0 8px;
+}
+
+html, body{
+    text-align: center;
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+   background: #F4F4F4;
+}
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#rotate-div {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.chand {
+    cursor: url(img/hand.cur), move;
+}
+.chand:active {
+    cursor: url(img/hand-h.cur), move;
+}
+
+
+#hd{
+    position: absolute;
+    padding: 10px 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+}
+#hd h1{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#hd .back, .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  line-height: 0.8em;
+  letter-spacing: 0.7em;
+  transition-duration: 0.45s, 0.45s;
+
+}
+#hd .back:hover, .next:hover{
+      letter-spacing: 0.2em;
+}
+#hd .back{
+    padding: 10px 0px 10px 10px;
+}
+#hd .next{
+    padding: 10px 10px 10px 0;
+}
+#hd a{
+  color: #848484;
+
+}
+#hd .back{
+  right: 58.4vw;
+}
+#hd .next{
+  left: 58.4vw;
+}
+
+  #hd .back, .next{
+    letter-spacing: 0.2em;
+  }
+
+.reference{
+  position: absolute;
+  bottom: 61px;
+  transform:translateX(-50%);
+  left: 50%;
+  z-index: 5;
+  line-height: 0.9em;
+  width: 150px;
+  height: 30px;
+}
+.mobile{
+    position: absolute;
+    display: inline-block;
+width: 50px;
+    height: 14px;
+bottom: 1.2vh;
+transform: translateX(-50%);
+left: 50%;
+z-index: 11;
+
+cursor: pointer;
+
+}
+.mobile a{
+width: 100%;
+    height: 120%;
+    display: inline-block;
+}
+.mobile:before, .mobile:after{
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 2.2px;
+    height: 100%;
+    background: #ccc;
+
+}
+.mobile:before{
+    left: 0;
+    animation-name: positionleft;
+animation-duration: 1.3s;
+transition-duration: .8s;
+}
+.mobile:after{
+    right: 0;
+     animation-name: positionright;
+animation-duration: 1.3s;
+transition-duration: .8s;
+}
+
+@keyframes positionleft{
+  0%{
+    left: 40%;
+}
+  100%{
+      left: 0;
+}
+}
+@keyframes positionright{
+  0%{
+    right: 40%;
+}
+  100%{
+      right: 0;
+}
+}
+
+.mobile:hover.mobile:after{
+    right: 30%;
+}
+.mobile:hover.mobile:before{
+    left: 30%;
+}
+
+.reference a {
+  color: #777;
+}
+.reference .Ref_first{
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  font-weight: 300;
+  width: 100%;
+}
+.reference:hover .Ref_first{
+  color: #999;
+  transition: all .5s;
+}
+.reference .Ref_first:before{
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: -39%;
+  left: 49.5%;
+  transform: translateX(-50%);
+  background: #aaa;
+  transition: all .5s;
+}
+.reference:hover .Ref_first:after{
+  top:70%;
+  transition: all .5s;
+  opacity: 1;
+}
+.reference .Ref_first:after{
+  content: attr(data-text);
+  opacity: 0;
+  font-size: 0.9em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #777;
+  transition: all .5s;
+}
+
+
+
+@media (max-width: 1024px){
+  .reference .Ref_first:after{
+    content: attr(data-text);
+    top: 70%;
+    opacity: 1;
+  }
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    ...
+}
+/* stylus-based screens */
+@media (hover: none) and (pointer: fine) {
+    ...
+}
+/* Nintendo Wii controller, Microsoft Kinect */
+@media (hover: hover) and (pointer: coarse) {
+    ...
+}
+/* mouse, touch pad */
+@media (hover: hover) and (pointer: fine) {
+    ...
+}
+
+}
