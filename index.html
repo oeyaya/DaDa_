@@ -223,16 +223,18 @@
                   }, 1500);
                 setTimeout(function() {
                    $(".mouse2").stop().fadeOut(300);
-                }, 3000); //클릭 가이드 표시
-            });
-            
-            setTimeout(function() {  //가이드 설명 마침. 
+                }, 2500); //클릭 가이드 표시
+                
+                setTimeout(function() {  //가이드 설명 마침. 
                     $(".explan").click(function(){
                         $(".arrow").hide();
                         $(".document2").hide();
                         $(".explan").fadeOut(500);
                     });
-                }, 500);
+                }, 2500);
+            });
+            
+            
             
         }, 4800);
         $(".skip").click(function(){
