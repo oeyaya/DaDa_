@@ -1,0 +1,803 @@
+*{ margin: 0; padding: 0; border: none; outline: none; font-size: 100%;}
+/*font-size: 100% -> h1, h2,,,크기 같게하기
+outline-> button클릭했을때 아웃라인 안나오게!*/
+li{ list-style: none;}
+a{ color: #222; text-decoration: none;}
+
+/*공통클래스*/
+.clear:after{
+    content: ""; display: block; clear: both;
+}
+
+.snap{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50vh;
+
+}
+.slideDown{
+ width: 139px;
+height: 182px;
+border-radius: 76px;
+  position: absolute;
+  bottom: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: .5s;background-image: url("../img/slidedown.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+animation-name: slidedown;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+.slideUp{
+    width: 139px;
+height: 182px;
+border-radius: 76px;
+
+  position: absolute;
+  bottom: 15vh;
+  left: 43%;
+  z-index: 10;
+   background-image: url("../img/slideup.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  cursor: pointer;
+}
+@keyframes slidedown{
+    0%{
+        opacity: 0;
+        bottom: 5vh;
+    }
+    100%{
+        opacity: 1;
+        bottom: 12vh;
+    }
+}
+
+.slideDown.sticky{
+  opacity: 0;
+  transition: .5s;
+}
+#hd {
+    position: fixed;
+    padding: 72px 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+    background: #f4f4f4;
+}
+#hd h1 {
+    position: relative;
+    width: 186px;
+    height: 60px;
+    margin: 0 auto;
+}
+#hd a {
+    color: #848484;
+}
+#hd .back, .next{
+  position: absolute;
+  top: 45%;
+  font-size: 2.6em;
+  line-height: 0.8em;
+  letter-spacing: 0.2em;
+}
+#hd .back{
+  right: 75.5vw;
+}
+#hd .next{
+  left: 76.5vw;
+}
+
+body{
+    background: #f4f4f4;
+}
+.opacity{
+  position: absolute;
+top: 0;
+bottom: 0;
+background: #f4f4f4;
+filter: blur(10px);
+z-index: 1;
+width: 147px;
+opacity: 50%;
+}
+.opaleft{
+  left: 0;
+}
+.oparight{
+  right: 0;
+}
+.web{
+      position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+    bottom: 21.5vh;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.web a{
+ width: 120%;
+    height: 150%;
+    display: inline-block;
+}
+
+.web:before, .web:after{
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 6.5px;
+    height: 100%;
+    background: #d0d0d0;
+
+}
+.web:before{
+    left: 0;
+    animation-name: positionleft;
+animation-duration: 1.3s;
+transition-duration: .8s;
+}
+.web:after{
+    right: 0;
+     animation-name: positionright;
+animation-duration: 1.3s;
+transition-duration: .8s;
+}
+
+@keyframes positionleft{
+  0%{
+    left: -40%;
+}
+  100%{
+      left: 0;
+}
+}
+@keyframes positionright{
+  0%{
+    right: -40%;
+}
+  100%{
+      right: 0;
+}
+}
+/*section*/
+#mainBanner{ height: 100vh; position: relative;}
+#mainBanner .img{
+    width: 100%;
+    height: calc(100vh - 200px);
+    margin-right: 20px;
+}
+
+#mainBanner li .img01{
+    background: url("../img/img01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02{
+  background: url("../img/img02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03{
+    background: url("../img/img03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04{
+  background: url("../img/img04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05{
+    background: url("../img/img05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06{
+  background: url("../img/img06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07{
+    background: url("../img/img07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08{
+  background: url("../img/img08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09{
+    background: url("../img/img09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img10{
+  background: url("../img/img10.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mainBanner li .img01_work{
+    background: url("../img/work/Assemblage_be_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02_work{
+  background: url("../img/work/Assemblage_be_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03_work{
+    background: url("../img/work/Assemblage_be_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04_work{
+  background: url("../img/work/Assemblage_be_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05_work{
+    background: url("../img/work/Assemblage_be_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06_work{
+  background: url("../img/work/Assemblage_be_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07_work{
+    background: url("../img/work/Assemblage_be_07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08_work{
+  background: url("../img/work/Assemblage_be_08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09_work{
+    background: url("../img/work/Assemblage_be_09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#mainBanner li .img01_work2{
+    background: url("../img/work/Ready-made_be_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02_work2{
+  background: url("../img/work/Ready-made_be_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03_work2{
+    background: url("../img/work/Ready-made_be_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04_work2{
+  background: url("../img/work/Ready-made_be_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05_work2{
+    background: url("../img/work/Ready-made_be_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06_work2{
+  background: url("../img/work/Ready-made_be_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07_work2{
+    background: url("../img/work/Ready-made_be_07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08_work2{
+  background: url("../img/work/Ready-made_be_08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09_work2{
+    background: url("../img/work/Ready-made_be_09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mainBanner li .img01_work3{
+    background: url("../img/work/Photomontage_be_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02_work3{
+  background: url("../img/work/Photomontage_be_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03_work3{
+    background: url("../img/work/Photomontage_be_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04_work3{
+  background: url("../img/work/Photomontage_be_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05_work3{
+    background: url("../img/work/Photomontage_be_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06_work3{
+  background: url("../img/work/Photomontage_be_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07_work3{
+    background: url("../img/work/Photomontage_be_07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08_work3{
+  background: url("../img/work/Photomontage_be_08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09_work3{
+    background: url("../img/work/Photomontage_be_09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#mainBanner li .img01_work4{
+    background: url("../img/work/Rayograph_be_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02_work4{
+  background: url("../img/work/Rayograph_be_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03_work4{
+    background: url("../img/work/Rayograph_be_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04_work4{
+  background: url("../img/work/Rayograph_be_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05_work4{
+    background: url("../img/work/Rayograph_be_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06_work4{
+  background: url("../img/work/Rayograph_be_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07_work4{
+    background: url("../img/work/Rayograph_be_07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08_work4{
+  background: url("../img/work/Rayograph_be_08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09_work4{
+    background: url("../img/work/Rayograph_be_09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mainBanner li .img01_work5{
+    background: url("../img/work/Surrealism_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img02_work5{
+  background: url("../img/work/Surrealism_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img03_work5{
+    background: url("../img/work/Surrealism_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img04_work5{
+  background: url("../img/work/Surrealism_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img05_work5{
+    background: url("../img/work/Surrealism_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img06_work5{
+  background: url("../img/work/Surrealism_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img07_work5{
+    background: url("../img/work/Surrealism_07.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainBanner li .img08_work5{
+  background: url("../img/work/Surrealism_08.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainBanner li .img09_work5{
+    background: url("../img/work/Surrealism_09.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slick-arrow{
+    visibility: hidden;
+}
+
+#sub .grid{
+position: absolute;
+top: 0;
+bottom: 0;
+
+}
+#sub .grid_02{
+  left: 37.1vw;
+  width: 21.3vw;
+  border-right: 3px solid ##E9E9E9;;
+animation-name: slideUp;
+  animation-duration: 3.5s;
+}
+#sub .grid_03{
+  left: 58.4vw;
+  width: 41.6vw;
+}
+#sub .grid_06{
+  left: 16.3vw;
+  border-right: 3px solid ##E9E9E9;;
+  border-left: 3px solid ##E9E9E9;;
+  width: 25.3vw;
+  animation-name: slideDown;
+  animation-duration: 2.5s;
+}
+#sub .grid_08{
+  right: 16.3vw;
+  border-right: 3px solid ##E9E9E9;;
+  width: 20.8vw;
+    animation-name: slideUp;
+  animation-duration: 2.5s;
+}
+@keyframes slideUp {
+  from {top:100%;}
+  to {top:0;}
+}
+@keyframes slideDown {
+  from {height: 0;}
+  to {height: 100%;}
+}
+
+
+
+
+#sub .content_01{
+  position: absolute;
+  left: 16.3vw;
+  top: 14%;
+}
+#sub .content_02{
+  position: absolute;
+  left: 16.3vw;
+  top: 12%;
+}
+#sub .content_03{
+  position: absolute;
+  left: 16.3vw;
+  top: 14%;
+}
+#sub .content_04{
+  position: absolute;
+  left: 16.3vw;
+  top: 20%;
+}
+#sub .content_05{
+  position: absolute;
+  left: 10.5vw;
+  top: 9%;
+  z-index: 5;
+}
+
+#sub .content_902 .only_fst, #sub .content_902 .only_scd{
+    font-size: 0.9em;
+    line-height: 0.5em;
+    display: inline-block;
+}
+#sub .title .title_en .only_fst{
+    font-size: 0.8em;
+}
+#sub .content_902 .only_scd{
+    font-size: 0.68em;
+    margin-left: 12px;
+    margin-bottom: 5px
+}
+#sub .content_05 .title .titleOpa{
+    width: auto;
+}
+#sub .content_903.title .titleOpa{
+    width: auto;
+}
+#sub .content_05 .title{
+    float: left;
+    display: inline-block;
+}
+#sub .content_05 .title .forText.title_en{
+  font-size: 75px;
+}
+#sub .content_05 .titlepo_02{
+  text-align: right;
+  margin-left: -21vw;
+  margin-top: 119px;
+}
+#sub .content_05 .titlepo_02 .title_kr{
+  text-align: right;
+}
+#sub .content_03 .contentBody_01{
+  margin-top: 17vw;
+}
+#sub .content_02po{
+  top: 24%;
+}
+#sub .content_03po{
+  top: 26%;
+}
+#sub .content_fix{
+  position: fixed;
+  left: 16.3vw;
+  top: 10%;
+  z-index: 5;
+}
+#sub .content_only.content_fix .forText.title_en{
+  font-size: 1.4em;
+    margin-top: 21px;
+    margin-left: 5px;
+}
+#sub .title .titleOpa.content_fix_op{
+    position: fixed;
+    left: 16.3vw;
+  top: 14%;
+    z-index: 5;
+    font-size: 5.5em;
+width: auto;
+}
+#sub .content_301.content_fix{
+  top: 15%;
+}
+#sub .content_902.content_fix{
+  top: 12%;
+}
+#sub .content_903.content_fix{
+  top: 14%;
+}
+#sub .content_902.content_fix .titleOpa{
+  width: auto;
+}
+#sub .content_203.content_fix .forText.title_en {
+    font-size: 5.5em;
+}
+.background{
+  background: #f4f4f4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 27vh;
+  z-index: 3;
+  opacity: 90%;
+}
+.bg_size.background{
+    height: 19vh;
+}
+#sub .title .title_en{
+  font-size: 8em;
+color: #444444;
+width: 200px;
+line-height: 0.8em;
+margin-bottom: 14px;
+}
+#sub .title .forText.title_en{
+margin-bottom: 1.5rem;
+    font-size: 6.7em;
+}
+#sub .title .forText {
+    line-height: 0.6em;
+    width: 70vw;
+}
+#sub .content_05 .titlepo_01 .forText {
+    line-height: 0.6em;
+    width: 27vw;
+}
+#sub .title .forSize {
+  font-size: 6.5em;
+}
+#sub .title .titleOpa{
+  font-size: 5em;
+color: #d4d4d4;
+margin-bottom: 40px;
+width: 200px;
+line-height: 0.9em;
+}
+#sub .title .titleOpa.Opa_only{
+    margin-bottom: 5px;
+}
+#sub .title_kr{
+  text-align: left;
+margin-left: 11px;
+font-size: 2em;
+color: #919191;
+line-height: 0.9em;
+letter-spacing: -0.05em;
+font-weight: revert;
+}
+#sub .title_kr.kr_only{
+    margin-bottom: 25px;
+    color: #888;
+}
+#sub .text_body{
+  margin-top: 10vw;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1.4em;
+  color: #383838;
+  width: 67.3vw;
+}
+#sub  .contentBody_02{
+  margin-top: 5vw;
+}
+#sub .body_01{
+    margin-bottom: 14px;
+}
+
+#sub .grid_006{
+  top: 28.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67.4vw;
+
+}
+
+.workImg{
+  height: 47vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#sub .grid_006 .workImg{
+  background-image: url("../img/work/Photomontage.jpeg");
+}
+#sub .grid_006.grid_007 .workImg{
+  background-image: url("../img/work/Celebes.png");
+   background-position: 35% 0px;
+    background-size: cover;
+}
+#sub .grid_006.grid_008 .workImg{
+  background-image: url("../img/work/arp%20untitle.png");
+   background-position: 35% 2px;
+    background-size: cover;
+}
+#sub .grid_006.grid_009 .workImg{
+  background-image: url("../img/work/my%20Desire.jpeg");
+   background-position: 10% 2px;
+    background-size: cover;
+}
+#sub .grid_006.grid_010 .workImg{
+  background-image: url("../img/work//Memory.jpeg");
+   background-position: 35% 2px;
+    background-size: cover;
+}
+#sub .grid_forImg01 .workImg{
+  background-image: url("../img/work/Ready-made.jpeg");
+}
+#sub .grid_forImg02 .workImg{
+  background-image: url("../img/work/Assemblage.jpeg");
+}
+#sub .grid_006 .date{
+margin-top: 17px;
+font-size: 2.2em;
+text-align: right;
+color: #797878;
+}
+
+
+#brand{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background: green;
+}
