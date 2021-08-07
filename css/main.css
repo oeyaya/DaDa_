@@ -1,3 +1,10 @@
+body {
+    cursor: url(../img/hand.cur), move;
+}
+body:active {
+    cursor: url(../img/hand-h.cur), move;
+}
+
 .loader{
     z-index: 110;
     background: #F4F4F4;
