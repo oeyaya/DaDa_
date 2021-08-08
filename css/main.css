@@ -4,7 +4,6 @@ body {
 body:active {
     cursor: url(../img/hand-h.cur), move;
 }
-
 .loader{
     z-index: 110;
     background: #F4F4F4;
@@ -188,29 +187,38 @@ body:active {
 }
 
 .mouse{
+    background-image: url("../img/mouse.png");
+    background-size: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%);
     width: 4vw;
+    height: 1.9vw;
     z-index: 106;
 }
 .mouse2{
+     background-image: url("../img/mouse.png");
+    background-size: cover;
     display: none;
     position: absolute;
     top: 47%;
     left: 64%;
     transform: translateY(-50%);
     width: 4vw;
+    height: 1.9vw;
     z-index: 106;
 }
 .arrow{
+    background: url("../img/arrow.png");
+    background-size: cover;
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%);
     width: 15.4vw;
+    height: 5.945vw;
     z-index: 106;
 }
 .document2{
