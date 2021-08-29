@@ -3,7 +3,7 @@
 
 body{font-family: Helvetica, sans-serif;}
 
-#sub .title_en, .titleOpa{
+#sub .title_en, .titleOpa, .contTitle p{
   font-family: Scala Caps;
 }
 
@@ -11,15 +11,12 @@ body{font-family: Helvetica, sans-serif;}
  font-family: 'Apple Symbols', 'Didact Gothic', sans-serif;
 }
 
-#sub .bottomTitle .titleF{
+#sub .bottomTitle .titleF, .ifGuid, .guideCont .contTitle{
 font-family: 'Roboto', sans-serif; font-weight: 500;
 }
-#sub .bottomTitle .titleS, .mobile{
+#sub .bottomTitle .titleS, .mobile, .reference:after, .contTitle p span, .guideCont .contText{
 font-family: 'Roboto', sans-serif; font-weight: 300;
 }
 .forText.reference{
      font-family: 'Apple Symbols', 'Didact Gothic', sans-serif;
-}
-.reference:after{
-font-family: 'Roboto', sans-serif; font-weight: 300;
 }
