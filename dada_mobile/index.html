@@ -9,13 +9,76 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link href="css/hd.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
  </head>
-
-
+<style>
+ .reference.ifGuid{
+    bottom: 14px;
+    width: auto;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #222;
+}
+.reference.ifGuid:hover{
+    color: #aaa;
+}
+.guideCont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #111;
+    width: 100vw;
+    z-index: 100;
+}
+.guideCont .ifGuid{
+    color: #fff;
+    z-index: 105;
+    font-size: 0.8em;
+}
+.guideCont{
+    display: none;
+}
+.guideCont .Cont{
+    width: 450px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+}
+.guideCont .contTitle{
+    width: 800px!important;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -2px;
+    margin: 0 0 25px 0;
+}
+.contTitle p{
+    font-size: 60px;
+    line-height: 58px;
+}
+.contTitle p span{
+    font-size: 20px;
+}
+.contText .last{
+    margin-top: 5px;
+}
+.guideCont .contText{
+    width: 450px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 18px 2px;
+    font-weight: 400;
+}
+</style>
 
 <body>
    <header id="hd">
