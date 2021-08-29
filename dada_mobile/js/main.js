@@ -26,7 +26,12 @@ $(function(){
     }
   ]
 });
-    
+     $(".ifGuid").click(function(){
+            $(".guideCont").fadeIn(400);
+        });
+    $(".guideCont .ifGuid").click(function(){
+            $(".guideCont").fadeOut(400);
+        }); 
 });
     
     
