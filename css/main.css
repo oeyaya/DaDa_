@@ -489,7 +489,7 @@ transition-duration: .8s;
     display: none;
 }
 .guideCont .Cont{
-    width: 450px;
+    width: 460px;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -516,7 +516,7 @@ transition-duration: .8s;
     margin-top: 5px;
 }
 .guideCont .contText{
-    width: 450px;
+    width: 460px;
     font-size: 13px;
     line-height: 18px;
     margin: 0 0 18px 2px;
