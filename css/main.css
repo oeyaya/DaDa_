@@ -457,19 +457,21 @@ transition-duration: .8s;
   transition: all .5s;
 }
 
-
-
-.reference.ifGuid{
-    bottom: 14px;
+ .reference.ifGuid{
+ transform: translateX(-50%);
+    left: 50%;
+    z-index: 5;
+    line-height: 0.9em;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    z-index: 10;
     width: auto;
-    font-size: 0.7em;
+    font-size: 2em;
     margin-bottom: 5px;
     transition: 0.3s;
     cursor: pointer;
     color: #444;
-}
-.reference.ifGuid:hover{
-    color: #aaa;
 }
 .guideCont{
     position: fixed;
@@ -483,31 +485,30 @@ transition-duration: .8s;
 .guideCont .ifGuid{
     color: #fff;
     z-index: 105;
-    font-size: 0.8em;
+    font-size: 2.5em;
 }
 .guideCont{
     display: none;
 }
 .guideCont .Cont{
-    width: 460px;
+    width: 70vw;
     position: absolute;
     top: 45%;
     left: 50%;
-    height: 200px;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: left;
 }
 .guideCont .contTitle{
     width: 800px!important;
-    font-size: 30px;
-    line-height: 28px;
+    font-size: 2.5em;
+    line-height: 0.8em;
     letter-spacing: -2px;
     margin: 0 0 25px 0;
 }
 .contTitle p{
-    font-size: 60px;
-    line-height: 58px;
+    font-size: 3.5em;
+    line-height: 0.8em;
 }
 .contTitle p span{
     font-size: 20px;
@@ -516,9 +517,9 @@ transition-duration: .8s;
     margin-top: 5px;
 }
 .guideCont .contText{
-    width: 460px;
-    font-size: 13px;
-    line-height: 18px;
+    width: 100%;
+    font-size: 2em;
+   line-height: 1.4em;
     margin: 0 0 18px 2px;
     font-weight: 400;
 }
