@@ -1,7 +1,6 @@
 
 /* Default Style */
 *    	  		{margin:0; padding:0; -webkit-tap-highlight-color:transparent; box-sizing:border-box;}
-html, body		{width:100%; -webkit-font-smoothing:antialiased; font:300 17px/25px "Noto Sans KR", sans-serif; color:#444;}
 
 td *, div *, li *, span *, p *	{vertical-align: baseline;}
 ul, ol, li						{list-style:none; margin:0px 0px 0px 0px;}
