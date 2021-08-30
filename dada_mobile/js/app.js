@@ -20,10 +20,7 @@ $('html, body').stop().animate({"scrollTop": 0}, 1000, 'easeInOutCubic');
     });
 
 $(window).scroll(function(){
-
-
-
-            var st = $(this).scrollTop();
+        var st = $(this).scrollTop();
             var brandTop = $(".snap").offset().top;
 
             if( st < brandTop ){
@@ -31,10 +28,7 @@ $(window).scroll(function(){
             }else if( st >= brandTop ){
                 $('.slideDown').addClass('sticky');
             }
-
-
-
-        });
+});
  $(".ifGuid").click(function(){
             $(".guideCont").fadeIn(400);
         });
