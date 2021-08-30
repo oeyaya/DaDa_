@@ -466,7 +466,7 @@ transition-duration: .8s;
     margin-bottom: 5px;
     transition: 0.3s;
     cursor: pointer;
-    color: #222;
+    color: #444;
 }
 .reference.ifGuid:hover{
     color: #aaa;
