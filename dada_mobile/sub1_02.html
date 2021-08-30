@@ -96,7 +96,29 @@
 
        </div>
     </section>
+<div class="reference ifGuid" onclick="clickThis()">Click here if you want guidance</div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                   <div class="contTitle"><p>What's Dadaism?</p></div>
+                   <div class="contText"> 제1차세계대전(1914~1918)의 불안 속에서 합리주의 문명과 그 사회체제 자체를 완전히 부정하고 파괴하려는 운동이다.<br>
+                   다다(dada)라고도 한다. 조형예술(造形藝術)뿐만 아니라 넓게 문학·음악의 영역까지 포함한다. 다다란 본래 프랑스어(語)로 어린이들이 타고 노는 목마(木馬)를 가리키는 말이나, 이것은 다다이즘의 본질에 뿌리를 둔 ‘무의미함의 의미’를 암시하는 것이다.
+                   쉽게 말해 기존 예술을 그냥, 생각 없이, 뒤엎고, 가지고 노는 게 '다다이스트'들의 목적이었다.
+                <p class="last">다다이즘을 특징짓는 가장 중요한 요소는 허무적 이상주의와 반항 정신 두 가지인데, 이는 과거로부터 내려오는 예술의 '관례'에 대한 반대였다. 그래서 다다이스트들은 예전에는 시도하지 않았던 예술형태를 도입했다. 다다이즘으로 인해서 예술과 삶의 경계가 사라졌고, 관중들은 예술활동에 최대한 많이 참여하게 되었다</p></div>
+               </div>
+           </div>
+    
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             // document.querySelector(".guideCont").style.display = "block";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             // document.querySelector(".guideCont").style.display = "none";
 
+           };
+           </script>
 </body>
 
 
