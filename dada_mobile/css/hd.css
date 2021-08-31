@@ -803,7 +803,6 @@ color: #797878;
 }
 
 .reference.ifGuid{
-    z-index: 5;
     height: 70px;
     width: 70px;
     position: absolute;
