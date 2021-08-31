@@ -803,8 +803,6 @@ color: #797878;
 }
 
 .reference.ifGuid{
-    right: 8%;
-    top: 5%;
     z-index: 5;
     height: 70px;
     width: 70px;
@@ -815,6 +813,8 @@ color: #797878;
     cursor: pointer;
 }
 #guide_icon{
+  right: 8%;
+  top: 5%;
   background-image: url(../img/guide_icon.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -877,4 +877,21 @@ color: #797878;
    line-height: 1.4em;
     margin: 0 0 18px 2px;
     font-weight: 400;
+}
+
+#index_guide{
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 5;
+    line-height: 0.9em;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    z-index: 10;
+    width: auto;
+    font-size: 2em;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #444;
 }
