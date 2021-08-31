@@ -107,10 +107,32 @@
        </div>
            <div class="slideUp"></div>
     </section>
+         <div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid" onclick="clickThis()"></div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                    <div class="contTitle"><p>03<span>page</span></p> 다다이즘 작가 중심페이지</div>
+               <div class="contText"> 앞서 살펴본 기법이 사용된 작품은 어떤 모습일까?<br>
+               쿠르트 슈비터스가 주로 사용한 아상블라주로 제작된 대표 작품을 살펴보자.
+               03 마지막페이지에서는 쿠르트 슈비터스의 작품을 감상하며 다다이즘에 대해 어렴풋이 감이 오는 것을 느낄 수 있을 것이다.
+            <p class="last">04 페이지에서 다다이즘에 대해 더 알아보자.</p></div>
+           </div>
+           </div>
     
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             document.querySelector("#guide_icon").style.display = "none";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             document.querySelector("#guide_icon").style.display = "block";
 
-
-</body>
+           };
+           </script>
+        
+        </body>
 
 
 
