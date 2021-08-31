@@ -76,6 +76,29 @@
 
        </div>
     </section>
+           <div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid" onclick="clickThis()"></div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                   <div class="contTitle"><p>02<span>page</span></p> 다다이즘 작가 중심페이지</div>
+                      <div class="contText"> 다다이즘 대표 작가의 사상을 알아가면서 다다이즘에대해 알아보자.<br>
+               마르셀 뒤샹은 다다이즘을 대표하는 작가중 한명이다. 마르셀 뒤샹은 어떤 삶을 살았고 다다이즘에 어떻게 합류하게 되었을까?
+            <p class="last">이 페이지를 통해 그 질문의 답을 찾아보자.</p></div>
+           </div>
+           </div>
+    
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             document.querySelector("#guide_icon").style.display = "none";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             document.querySelector("#guide_icon").style.display = "block";
+
+           };
+           </script>
 
 </body>
 
