@@ -131,9 +131,30 @@
        </div>
        <div class="slideUp"></div>
     </section>
+    
+<div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid" onclick="clickThis()"></div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                   <div class="contTitle"><p>07<span>page</span></p> 다다이즘과 초현실주의 사이 Man Ray</div>
+               <div class="contText"> 다다이즘과 초현실주의와 관련이 깊은 작가 만레이를 알아가면서 두 우동의 연관성을 통해 다다이즘에 대해 알아보자.<br>
+              만 레이가 주로 사용한 기법에 어떤 것이 있을까?
+            <p class="last">이 페이지를 통해 그 질문의 답을 찾아보자.</p></div>
+           </div>
+           </div>
+    
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             document.querySelector("#guide_icon").style.display = "none";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             document.querySelector("#guide_icon").style.display = "block";
 
-
-
+           };
+           </script>
 </body>
 
 
