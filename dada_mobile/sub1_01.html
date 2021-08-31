@@ -73,7 +73,8 @@
 
        </div>
     </section>
-   <div class="reference ifGuid" onclick="clickThis()">Click here if you want guidance</div>
+     <div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid"></div>
            <div class="guideCont">
               <div class="reference ifGuid" onclick="clickThis2()">Back</div>
                <div class="Cont">
@@ -87,11 +88,11 @@
            <script>
            function clickThis(){
              document.querySelector(".guideCont").classList.add('fadeIn');
-             // document.querySelector(".guideCont").style.display = "block";
+             document.querySelector("#guide_icon").style.display = "none";
            };
            function clickThis2(){
              document.querySelector(".guideCont").classList.remove('fadeIn');
-             // document.querySelector(".guideCont").style.display = "none";
+             document.querySelector("#guide_icon").style.display = "block";
 
            };
            </script>
