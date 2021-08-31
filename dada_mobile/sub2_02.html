@@ -94,7 +94,30 @@
 
        </div>
     </section>
+    <div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid" onclick="clickThis()"></div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                   <div class="contTitle"><p>02<span>page</span></p> 다다이즘 작가 중심페이지</div>
+                      <div class="contText"> 마르셀 뒤샹이 주로 사용한 기법은 뭐가 있을까?<br>
+               다다이즘의 주 사상인 "우연성", 작품을 만들 때도 우연성에 의하여 제작된다.<br>
+                마르셀 뒤샹이 사용한 우연성에 의거한 기법은 뭐가 있을까?
+            <p class="last">이 페이지를 통해 그 질문의 답을 찾아보자.</p></div>
+           </div>
+           </div>
+    
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             document.querySelector("#guide_icon").style.display = "none";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             document.querySelector("#guide_icon").style.display = "block";
 
+           };
+           </script>  
 </body>
 
 
