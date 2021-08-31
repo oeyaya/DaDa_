@@ -801,20 +801,24 @@ color: #797878;
   height: 10px;
   background: green;
 }
+
 .reference.ifGuid{
-  background-image: url(../img/guide_icon.png);
-  background-size: cover;
-  background-repeat: no-repeat;
     right: 8%;
     top: 5%;
     z-index: 5;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     position: absolute;
     z-index: 10;
     margin-bottom: 5px;
     transition: 0.3s;
     cursor: pointer;
+}
+#guide_icon{
+  background-image: url(../img/guide_icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
 }
 .guideCont{
     position: fixed;
@@ -826,9 +830,14 @@ color: #797878;
     z-index: 100;
 }
 .guideCont .ifGuid{
-    color: #fff;
-    z-index: 105;
-    font-size: 2.5em;
+  top: 5%;
+  right: 9%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 105;
+  font-size: 2.5em;
+  line-height: 1.8em;
 }
 .guideCont{
   display: none;
@@ -847,17 +856,17 @@ color: #797878;
 }
 .guideCont .contTitle{
     width: 800px!important;
-    font-size: 3.2em;
+    font-size: 2.5em;
     line-height: 0.8em;
     letter-spacing: -2px;
     margin: 0 0 25px 0;
 }
 .contTitle p{
-    font-size: 4.5em;
-    line-height: 0.5em;
+    font-size: 3.5em;
+    line-height: 0.8em;
 }
 .contTitle p span{
-    font-size: 40px;
+    font-size: 20px;
 }
 .contText .last{
     margin-top: 5px;
