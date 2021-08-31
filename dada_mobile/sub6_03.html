@@ -130,6 +130,30 @@
        </div>
        <div class="slideUp"></div>
     </section>
+    <div class="reference ifGuid" onclick="clickThis()"></div>
+    <div id="guide_icon" class="reference ifGuid" onclick="clickThis()"></div>
+           <div class="guideCont">
+              <div class="reference ifGuid" onclick="clickThis2()">Back</div>
+               <div class="Cont">
+                  <div class="contTitle"><p>06<span>page</span></p> 다다이즘 기법 중심페이지</div>
+               <div class="contText"> 다다이즘의 주 사상인 "우연성"에 의거한 기법에 대해 알아보자.<br>
+               포토몽타주를 주로 사용한 작가들은 누구일까?
+                 06페이지 마지막에서는 다다이즘의 사상인 우연성에대해 생각해보고 정리해보자.
+            <p class="last">07 페이지에서 다다이즘에 대해 더 알아보자.</p></div>
+           </div>
+           </div>
+    
+           <script>
+           function clickThis(){
+             document.querySelector(".guideCont").classList.add('fadeIn');
+             document.querySelector("#guide_icon").style.display = "none";
+           };
+           function clickThis2(){
+             document.querySelector(".guideCont").classList.remove('fadeIn');
+             document.querySelector("#guide_icon").style.display = "block";
+
+           };
+           </script>
 </body>
 
 
