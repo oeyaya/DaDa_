@@ -19,8 +19,8 @@ a{ color: #222; text-decoration: none;}
 }
 .slideDown{
  width: 139px;
-height: 182px;
-border-radius: 76px;
+ height: 182px;
+ border-radius: 76px;
   position: absolute;
   bottom: 12vh;
   left: 50%;
@@ -805,7 +805,7 @@ color: #797878;
 .reference.ifGuid{
     height: 70px;
     width: 70px;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     margin-bottom: 5px;
     transition: 0.3s;
