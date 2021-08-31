@@ -855,17 +855,17 @@ color: #797878;
 }
 .guideCont .contTitle{
     width: 800px!important;
-    font-size: 2.5em;
+    font-size: 3.5em;
     line-height: 0.8em;
     letter-spacing: -2px;
     margin: 0 0 25px 0;
 }
 .contTitle p{
-    font-size: 3.5em;
-    line-height: 0.8em;
+    font-size: 3.8em;
+    line-height: 0.4em;
 }
 .contTitle p span{
-    font-size: 20px;
+    font-size: 0.2em;
 }
 .contText .last{
     margin-top: 5px;
