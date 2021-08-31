@@ -802,20 +802,19 @@ color: #797878;
   background: green;
 }
 .reference.ifGuid{
- transform: translateX(-50%);
-    left: 50%;
+  background-image: url(../img/guide_icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+    right: 8%;
+    top: 5%;
     z-index: 5;
-    line-height: 0.9em;
-    height: 30px;
+    height: 80px;
+    width: 80px;
     position: absolute;
-    top: 90%;
     z-index: 10;
-    width: auto;
-    font-size: 2em;
     margin-bottom: 5px;
     transition: 0.3s;
     cursor: pointer;
-    color: #444;
 }
 .guideCont{
     position: fixed;
