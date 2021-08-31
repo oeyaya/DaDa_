@@ -531,7 +531,7 @@ bottom: 0;
 #sub .grid_02{
   left: 37.1vw;
   width: 21.3vw;
-  border-right: 3px solid ##E9E9E9;
+  border-right: 3px solid #E9E9E9;
 animation-name: slideUp;
   animation-duration: 3.5s;
 }
@@ -541,15 +541,15 @@ animation-name: slideUp;
 }
 #sub .grid_06{
   left: 16.3vw;
-  border-right: 3px solid ##E9E9E9;
-  border-left: 3px solid ##E9E9E9;
+  border-right: 3px solid #E9E9E9;
+  border-left: 3px solid #E9E9E9;
   width: 25.3vw;
   animation-name: slideDown;
   animation-duration: 2.5s;
 }
 #sub .grid_08{
   right: 16.3vw;
-  border-right: 3px solid ##E9E9E9;
+  border-right: 3px solid #E9E9E9;
   width: 20.8vw;
     animation-name: slideUp;
   animation-duration: 2.5s;
