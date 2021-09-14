@@ -1,3 +1,8 @@
+.enStyle{
+  color: #888;
+  font-size: 0.9em;
+}
+
 #sub .bottomBlock{
   position: absolute;
   top: 0;
