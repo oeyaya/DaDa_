@@ -516,7 +516,8 @@ transition-duration: .8s;
     margin-top: 5px;
 }
 .guideCont .contText{
-    width: 460px;
+    word-break: keep-all;
+    width: 450px;
     font-size: 13px;
     line-height: 18px;
     margin: 0 0 18px 2px;
