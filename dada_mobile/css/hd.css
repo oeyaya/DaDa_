@@ -732,6 +732,7 @@ font-weight: revert;
     color: #888;
 }
 #sub .text_body{
+  word-break: keep-all;
   margin-top: 10vw;
   font-size: 2em;
   text-align: left;
