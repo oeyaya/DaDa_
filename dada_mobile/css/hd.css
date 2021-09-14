@@ -8,7 +8,10 @@ a{ color: #222; text-decoration: none;}
 .clear:after{
     content: ""; display: block; clear: both;
 }
-
+.enStyle{
+  color: #999;
+  font-size: 0.9em;
+}
 .snap{
     position: absolute;
     top: 50%;
