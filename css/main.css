@@ -4,6 +4,10 @@ body {
 body:active {
     cursor: url(../img/hand-h.cur), move;
 }
+.enStyle{
+  color: #999;
+  font-size: 0.9em;
+}
 .loader{
     z-index: 110;
     background: #F4F4F4;
