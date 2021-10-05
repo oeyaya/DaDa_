@@ -29,7 +29,11 @@
             </a>
            </h1>
        </header>
-    <div class="forText reference"><a href="https://github.com/cmiscm/cm-rotate.js"><div class="Ref_first" data-text="Jongmin Kim - cmiscm.co">Ref</div> </a></div>
+    <div class="forText reference">
+        <a href="https://github.com/cmiscm/cm-rotate.js">
+        <div class="Ref_first" data-text="Jongmin Kim - cmiscm.co">Ref</div>
+        </a>
+    </div>
        
     <div class="mobile"><a href="dada_mobile/index.html"></a></div>
 
@@ -89,7 +93,7 @@
    
     <script type="text/javascript">
         
-        window.onload = function (){
+        window.onload = function (){ //메인 메뉴 인터랙션
             $(".loader").delay(1800).fadeOut(500);
             
             var backgroundImages = ["img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png",
@@ -102,31 +106,32 @@
             }
         }
         
+        
         $(".text.text2").hide();
         $(".text.text3").hide();
-        setTimeout(function() {
+        setTimeout(function() { //타이핑 인터랙션 2번째 줄
             $(".text.text2").show();
         }, 3000);
-        setTimeout(function() {
+        setTimeout(function() { //타이핑 인터랙션 3번째 줄
             $(".text.text3").show();
         }, 3500);
         
         $(".mouse").hide();
         
-        setTimeout(function() {
+        setTimeout(function() { //4.5초 후 마우스 아이콘 나타남
             $(".mouse").fadeIn(500);
         }, 4500);
-         setTimeout(function() {
+         setTimeout(function() { //6 후 마우스 아이콘 나타남
             $(".mouse").fadeOut(300);
         }, 6000);
         
         setTimeout(function() {
-            $(".explan").click(function(){
+            $(".explan").click(function(){ // 2.5초 후 .explan클릭하면 1번 설명 사라짐 
                 $(".planning").hide();
                 $(".arrow").fadeIn(500);
                 $(".document2").fadeIn(500); //2번째 설명으로 넘어감
                 
-                 setTimeout(function() {
+                 setTimeout(function() { //2.5초후 마우스 아이콘
                    $(".mouse2").stop().fadeIn(500);
                   }, 1500);
                 setTimeout(function() {
@@ -141,18 +146,16 @@
                     });
                 }, 2500);
             });
-            
-            
-            
-        }, 4800);
-        $(".skip").click(function(){
+}, 4800);
+        
+        $(".skip").click(function(){ //가이드 모두 사라짐
             $(".explan").fadeOut(500);
             $(".panning2").hide();
         });
-        $(".ifGuid").click(function(){
+        $(".ifGuid").click(function(){ //메인화면 가이드 페이드 인
             $(".guideCont").fadeIn(400);
         });
-    $(".guideCont .ifGuid").click(function(){
+        $(".guideCont .ifGuid").click(function(){ //메인화면 가이드 페이드 아웃
             $(".guideCont").fadeOut(400);
         });
         
