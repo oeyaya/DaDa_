@@ -525,7 +525,7 @@ transition-duration: .8s;
 .guideCont .Cont{
     width: 460px;
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 50%;
     height: 200px;
     transform: translate(-50%, -50%);
