@@ -401,7 +401,7 @@ body {
   background: #aaa;
   transition: all .5s;
 }
-.reference .Ref_first:after{
+.reference a .Ref_first:after{
   content: attr(data-text);
   opacity: 0;
   font-size: 0.9em;
@@ -413,7 +413,7 @@ body {
   color: #777;
   transition: all .5s;
 }
-.reference:hover .Ref_first:after{
+.reference:hover a .Ref_first:after{
   top:70%;
   transition: all .5s;
   opacity: 1;
